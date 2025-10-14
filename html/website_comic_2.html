@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>漫画紹介</title>
+		<link rel="stylesheet" href="../css/index.css">
+		<style>
+			.comic-list {
+				max-width: 900px;
+				margin: 40px auto;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 32px;
+				justify-items: center;
+			}
+			.comic-card {
+				padding: 24px;
+				width: 260px;
+				text-align: center;
+			}
+			.comic-title {
+				font-size: 1.2em;
+				font-weight: bold;
+				margin-bottom: 8px;
+			}
+			.comic-desc {
+				font-size: 1em;
+				color: #333;
+			}
+		</style>
+</head>
+
+<body>
+		<h1 style="text-align:center;">漫画紹介ですワ</h1>
+		<div class="comic-list">
+			<!-- 漫画例（文字のみ） -->
+			<div class="comic-card">
+				<div class="comic-title"><a href="comic_1.html">第1話：始まりの章</a></div>
+				<div class="comic-desc">第1話のあらすじや紹介文をここに書いてください。</div>
+			</div>
+			<div class="comic-card">
+				<div class="comic-title"><a href="comic_2.html">第2話：冒険の旅</a></div>
+				<div class="comic-desc">第2話のあらすじや紹介文をここに書いてください。</div>
+			</div>
+			<div class="comic-card">
+				<div class="comic-title"><a href="comic_3.html">第3話：仲間との出会い</a></div>
+				<div class="comic-desc">第3話のあらすじや紹介文をここに書いてください。</div>
+			</div>
+			<!-- 追加したい漫画は同じ形式で増やしてください -->
+		</div>
+		<div style="text-align:center; margin-top:60px;">
+			<a href="website_index.html">戻る</a>
+		</div>
+</body>
+</html>

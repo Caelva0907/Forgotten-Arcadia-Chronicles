@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* サイトの背景の色変更 */
+body {
+  background-color: #ffffff; /* 明るい水色例。お好みで変更可 */
+}
+
+/* 文字の設定*/
+p {
+  color: black;
+  font-size: 1em;
+}
+
+/* 文字の大きさ*/
+.small { font-size: 0.8em; }
+.medium { font-size: 1.2em; } 
+.big { font-size: 2em; }
+.surper-big { font-size: 5em; }
+
+/* 文字の色 */
+.red { color: red; }
+.blue { color: blue; }
+.green { color: green; }
+.yellow { color: yellow; }
+.pink { color: pink; }
+.orange { color: orange; }
+.purple { color: purple; }
+.brown { color: brown; }
+.gray { color: gray; }
+.black { color: black; }
+.white { color: white; }
+
+/* 文字の配置 */
+.left { text-align: left;}
+.center { text-align: center; }
+.right { text-align: right;}
+
+
+/* フォントの種類 */
+
+.gothic {
+  font-family: '游ゴシック', 'Yu Gothic', 'Meiryo', 'MS PGothic', sans-serif;
+}
+.mincho {
+  font-family: '游明朝', 'Yu Mincho', 'MS Mincho', serif;
+}
+.serif {
+  font-family: serif;
+}
+.sans {
+  font-family: Arial, Helvetica, 'Yu Gothic', sans-serif;
+}
+.mono {
+  font-family: 'Courier New', Courier, monospace;
+}
+.fantasy {
+  font-family: fantasy;
+}
+.cursive {
+  font-family: cursive;
+}
+.impact {
+  font-family: Impact, Charcoal, sans-serif;
+}
+.comic {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+
+/*サイト全体の文字のフォント*/
+
+body {
+  font-family: '游ゴシック', 'Yu Gothic', 'Meiryo', sans-serif;
+}

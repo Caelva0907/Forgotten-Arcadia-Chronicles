@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オリジナルキャラクター紹介</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+      .character-list {
+        max-width: 900px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        justify-items: center;
+      }
+      .character-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        padding: 24px;
+        width: 260px;
+        text-align: center;
+      }
+      .character-card img {
+        max-width: 80px;
+        height: auto;
+        border-radius: 6px;
+      }
+      .character-name {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: 12px;
+        margin-bottom: 8px;
+      }
+      .character-desc {
+        font-size: 1em;
+        color: #333;
+      }
+    </style>
+</head>
+
+
+
+<body>
+
+<h1 style="text-align:center;">オリキャラ紹介ですワ</h1>
+
+  <!-- 詳細表示領域（h1直後に移動） -->
+  <div id="character-detail" style="display:none; text-align:center; margin-bottom:40px;"></div>
+  <div class="character-list">
+  <!-- 詳細表示領域（上部に移動） -->
+  <div id="character-detail" style="display:none; text-align:center; margin-bottom:40px;"></div>
+
+
+    <div class="character-list">
+
+      <!-- 顔アイコンのみ表示。クリックで詳細表示 -->
+
+      <div class="character-card" onclick="showCharacter(1)">
+
+        <img src="../img/イージス（顔アイコン）.png" alt="キャラ1 顔アイコン">
+        <div class="character-name">イージス・シャークアイCL 2300</div>
+
+      </div>
+
+      <div class="character-card" onclick="showCharacter(2)">
+
+        <img src="../img/character2_face.png" alt="キャラ2 顔アイコン">
+        <div class="character-name">エレン・デストロイヤーCL J0537-6910</div>
+
+      </div>
+
+      <div class="character-card" onclick="showCharacter(3)">
+
+        <img src="../img/character2_face.png" alt="キャラ3 顔アイコン">
+        <div class="character-name">博士ちゃん</div>
+
+      </div>
+
+      <div class="character-card" onclick="showCharacter(4)">
+
+        <img src="../img/character2_face.png" alt="キャラ4 顔アイコン">
+        <div class="character-name">博士ちゃん</div>
+
+      </div>
+
+     <div class="character-card" onclick="showCharacter(5)">
+    
+            <img src="../img/character2_face.png" alt="キャラ5 顔アイコン">
+            <div class="character-name">博士ちゃん</div>
+     </div>
+
+
+    </div>
+
+
+    <!-- 詳細表示領域 -->
+
+    <script>
+      function showCharacter(num) {
+        var detail = document.getElementById('character-detail');
+        if(num === 1) {
+          detail.innerHTML = `
+            <img src="../img/イージス（全体画像）.png" alt="キャラ1全体" style="max-width:300px; border-radius:8px;">
+            <div class="character-name">キャラ名1</div>
+            <div class="character-desc">キャラ1の説明文をここに書いてください。</div>
+            <button onclick='hideDetail()'>閉じる</button>
+          `;
+        } else if(num === 2) {
+          detail.innerHTML = `
+            <img src="../img/character2_full.png" alt="キャラ2全体" style="max-width:300px; border-radius:8px;">
+            <div class="character-name">キャラ名2</div>
+            <div class="character-desc">キャラ2の説明文をここに書いてください。</div>
+            <button onclick='hideDetail()'>閉じる</button>
+          `;
+        }
+        detail.style.display = 'block';
+        window.scrollTo({top: detail.offsetTop, behavior: 'smooth'});
+      }
+      function hideDetail() {
+        document.getElementById('character-detail').style.display = 'none';
+      }
+    </script>
+
+
+
+
+</body>
+

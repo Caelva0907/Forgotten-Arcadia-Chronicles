@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オリジナル楽曲</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+      .music-list {
+        max-width: 600px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        justify-items: center;
+      }
+      .music-card {
+        padding: 24px;
+        width: 260px;
+        text-align: center;
+      }
+      .music-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .music-desc {
+        font-size: 1em;
+        color: #333;
+      }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center;">オリジナル楽曲ですワ</h1>
+    <div class="music-list">
+      <!-- 楽曲例（音源ファイルがある場合はaudioタグで再生可） -->
+      <div class="music-card">
+        <div class="music-title">The Promised Sky</div>
+        <div class="music-desc">BPM：100-120 </div>
+        <div class="music-desc">拍子：4/4 </div>
+        <div class="music-desc">一番最初に作った曲</div>
+    
+        <audio controls>
+          <source src="../music/The Promised Sky.mp3" type="audio/mpeg">
+          お使いのブラウザはaudioタグに対応していません。
+        </audio>
+
+          <div style="margin-top: 12px;">
+            <a href="../music/The Promised Sky.mp3" download style="display:inline-block;padding:8px 20px;background:#1976d2;color:#fff;text-decoration:none;border-radius:4px;font-weight:bold;">ダウンロード</a>
+          </div>
+
+      </div>
+
+      <!-- 追加したい楽曲は同じ形式で増やしてください -->
+
+    </div>
+    
+    <div style="text-align:center; margin-top:60px;">
+      <a href="website_index.html">戻る</a>
+    </div>
+    
+</body>
+</html>

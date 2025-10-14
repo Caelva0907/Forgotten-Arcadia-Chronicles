@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4コマ漫画紹介</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+      .koma-list {
+        max-width: 600px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        justify-items: center;
+      }
+      .koma-card {
+        padding: 24px;
+        width: 260px;
+        text-align: center;
+      }
+      .koma-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .koma-desc {
+        font-size: 1em;
+        color: #333;
+      }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">4コマ漫画ですワ</h1>
+    <div class="koma-list">
+      <!-- 4コマ漫画例（文字のみ） -->
+      <div class="koma-card">
+        <div class="koma-title"><a href="comic/4koma20250927.html">レアキャラ</a></div>
+        <div class="koma-desc">2025/09/27</div>
+      </div>
+      <div class="koma-card">
+        <div class="koma-title"><a href="comic/4koma20250926.html">犯人さがし</a></div>
+        <div class="koma-desc">2025/09/26</div>
+      </div>
+      <div class="koma-card">
+        <div class="koma-title"><a href="comic/4koma20250710.html">頼れるイージス</a></div>
+        <div class="koma-desc">2025/07/10</div>
+      </div>
+      <!-- 追加したい4コマは同じ形式で増やしてください -->
+    </div>
+    <div style="text-align:center; margin-top:60px;">
+      <a href="website_index.html">戻る</a>
+    </div>
+</body>
+</html>
